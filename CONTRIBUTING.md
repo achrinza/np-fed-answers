@@ -2,7 +2,7 @@
 
 *Copyright (c) 2019 Rifa I. Achrinza*
 
-*This document is licensed under MIT license (See [LICENSE.txt](LICENSE.txt) for details)*
+*This document is licensed under MIT license (See [LICENSE](LICENSE) for details)*
 
 ---
 
