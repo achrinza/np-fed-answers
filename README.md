@@ -15,7 +15,7 @@ If there's anything amiss, please open an issue so that we check on it!
 
 ## Plagarism
 
-This repo is itended for educational reference only and must not be copied with the intention of plagarism. Please refer to this repo only for guidance or future reference.
+This repo is intended for educational reference only and must not be copied with the intention of plagarism. Please refer to this repo only for guidance or future reference.
 
 ## Missing files
 
