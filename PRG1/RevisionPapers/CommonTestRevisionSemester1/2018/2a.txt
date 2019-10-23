@@ -1,0 +1,5 @@
+1. Prompt the user for the parcel weight
+2. Prompt the user for the need of express service
+3. Add the cost of the parcel delivery service charges based on the weight
+4. Add the cost of the parcel delivery service charges based on if the user requested for express service
+5. Output the final cost to the user
