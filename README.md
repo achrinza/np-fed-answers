@@ -5,8 +5,8 @@
 *This document is licensed under MIT license (See [LICENSE](LICENSE) for details)*
 
 ---
-![GitHub](https://img.shields.io/github/license/achrinza/np-prg1-answers)
-![GitHub issues](https://img.shields.io/github/issues/achrinza/np-prg1-answers)
+![GitHub](https://img.shields.io/github/license/achrinza/np-csf02-answers)
+![GitHub issues](https://img.shields.io/github/issues/achrinza/np-csf02-answers)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 
 This repo tries to contain all of the sample answers for CSF02 PRG1.
