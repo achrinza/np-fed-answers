@@ -1,0 +1,96 @@
+<!--
+    Copyright (c) 2019 Rifa I. Achrinza
+    This document is licensed under MIT license (See LICENSE for details)
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rifa Achrinza">
+        <meta name="description" content="Pizza order form">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Pizza Order Form</title>
+
+        <style>
+            label {
+                display: -block;
+                padding: 1rem;
+            }
+
+            /*label*/.deliver-postalcode {
+                margin-left: 10rem;
+            }
+
+            /*label*/.label--flexible-size {
+                width: auto; /* Fix sizing error */
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Pizza Order Form</h1>
+            <label>Pizza Type
+                <select>
+                    <option>Aloha Chicken</option>
+                    <option>Beef Pepperoni</option>
+                    <option>Chicken Delight</option>
+                    <option>Deluxe Cheese</option>
+                </select>
+            </label>
+            
+            <label>
+                Quantity
+                <input type="number" min="1" max="4" value="1">
+            </label>
+
+            <fieldset name="size">
+                <legend>Size</legend>
+                <label><input type="radio">Small</label>
+                <label><input type="radio">Medium</label>
+                <label><input type="radio">Large</label>
+                </label>
+            </fieldset>
+
+            <fieldset name="crust">
+                <legend>Crust</legend>
+                <label><input type="radio">Thin</label>
+                <label><input type="radio">Thick</label>
+                <label><input type="radio">Deep Dish</label>
+            </fieldset>
+
+            <fieldset name="toppings">
+                <legend>Toppings</legend>
+                <label class="label--flexible-size"><input type="checkbox">Mushrooms</label>
+                <label><input type="checkbox">Sausage</label>
+                <label><input type="checkbox">Olies</label>
+            </fieldset>
+
+            <label>
+                Addons
+                <select name="addons">
+                    <option>Please select addons if required</option>
+                    <option>Side of Buffalo Wings</option>
+                    <option>Garlic Bread</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Deliver to:</legend>
+
+                <label>Name: <input name="deliver-name" type="text" autocomplete></label><br>
+                <label>Address: <textarea name="deliver-address" rows="2" cols="30"></textarea></label>
+                <label class="deliver-postalcode">Postal Code: <input name="deliver-postalcode" type="text" pattern="[0-9]{6}"></label><br>
+                <label>Phone #: <input name="deliver-phone" type="text" pattern="[689][0-9]{7}"></label><br>
+                <label>Email: <input name="deliver-email" type="email"></label><br>
+                <label>Date: <input name="deliver-date" type="date" min="2019-10-29" max="2019-11-04"></label><br>
+                <label>Time: <input name="deliver-time" type="time" min="10:00" max="22:00"></label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
