@@ -80,8 +80,8 @@ namespace FareCalculationApp
                             try
                             {
                                 BusStopList.Add(new BusStop(
-                                   LineArray[1],
                                    Convert.ToSingle(LineArray[0]),
+                                   LineArray[1],
                                    LineArray[2],
                                    LineArray[3]
                                ));
