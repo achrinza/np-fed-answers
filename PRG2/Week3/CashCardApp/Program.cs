@@ -26,6 +26,13 @@ namespace CashCardApp
 
             CashCard CashCardLookup = CashCardList.Find(x => x.Id == CashCardIDLookupValue);
 
+            if (CashCardLookup == default)
+            {
+                Console.WriteLine("Error: No card found.");
+                Console.ReadKey();
+                Environment.Exit(1);
+            }
+
             WriteCardList(new List<CashCard> { CashCardLookup });
 
             Console.Write("Top up amt? ");
