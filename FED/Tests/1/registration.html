@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rifa Achrinza">
+        <meta name="description" content="Cyber Awareness Camp">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Cyber Awareness Camp</title>
+    </head>
+    <body>
+        <form>
+            <h2>Cyber Awareness Camp<br>Registration Form</h2> <!-- <br> tag added to pass visual acceptance test in Figure 2 and description of this heading in Q2(b). -->
+
+            <label class="block-registration__label block-registration__label--master" for="regform-course">Course</label>
+            <select id="regform-course" name="course" required>
+                <option>FI</option>
+                <option>IMGD</option>
+                <option>CSF</option>
+                <option>IT</option>
+            </select>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Year</label>
+            <label><input name="year" type="radio" value="1" required>Year 1</label>
+            <label><input name="year" type="radio" value="2" required>Year 2</label>
+            <label><input name="year" type="radio" value="3" required>Year 3</label>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Name</label>
+            <input type="text" placeholder="Enter your name" required>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Email address</label>
+            <input type="email" placeholder="Enter your email address" required>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Student number</label>
+            <input type="text" pattern="S[0-9]{8}" placeholder="Enter your student number" required>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Activities attending</label>
+            <label><input name="activitiesAttending" type="checkbox" value="1" required checked>Day 1</label> <!-- Checked attribute added to fulfil Figure 2 visual acceptance test. For sake of completeness.-->
+            <label><input name="activitiesAttending" type="checkbox" value="2">Day 2</label>
+            <label><input name="activitiesAttending" type="checkbox" value="3">Day 3</label>
+            <br>
+            <label class="block-registration__label block-registration__label--master">Remarks</label>
+            <textarea
+                name="remarks"
+                placeholder="Meals will be provided"
+                rows="3"
+                cols="30"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+
+        <footer class="block-registration__footer">
+            <p>Developed by Rifa Achrinza</p>
+        </footer>
+    </body>
+</html>

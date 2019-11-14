@@ -1,0 +1,78 @@
+﻿body
+{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+    font-size: 2em;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #000;
+    padding: 4px;
+}
+
+table th {
+    background-color: lightgrey;
+}
+
+.block-graduation__time {
+    background-color: lightgrey;
+}
+
+.schedule__item--important {
+    background-color: lightpink;
+    font-weight: bold;
+}
+
+.block-graduation__diploma-list {
+    text-align: left; /* To fulfill visual test as seen in Figure 2(b). */
+}
+
+.block-graduation__footer {
+    padding-top: 10px;
+    font-style: italic;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    width: 500px;
+    margin: 0 50px;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+form h2 {
+    text-align: center;
+}
+
+.block-registration__footer {
+    color: blue;
+    text-align: left; /* Not necessary, but added for sake of completeness due to test requirements. */
+}
+
+.block-registration__label--master {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0; /* Added to fulfil visual acceptance test in Figure 2 and requirement in Q2(b): "The eventual form should look like Figure 2." */
+}
