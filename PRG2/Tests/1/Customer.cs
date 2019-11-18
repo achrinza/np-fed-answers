@@ -24,8 +24,6 @@ namespace CustomerApp_S10193294
         public int RepaymentPeriod { get => repaymentPeriod; set => repaymentPeriod = value; }
         public int InterestRate { get => interestRate; set => interestRate = value; }
 
-        public Customer() { }
-
         public Customer(string name, double loanAmount, int repaymentPeriod, int interestRate)
         {
             Name = name;
