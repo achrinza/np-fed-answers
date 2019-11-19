@@ -1,4 +1,9 @@
-﻿@charset "UTF-8";
+﻿/*
+    Copyright (c) 2019 Rifa I. Achrinza
+    This document is licensed under MIT license (See LICENSE for details)
+    SPDX-Short-Identifier: MIT
+*/
+@charset "UTF-8";
 
 /* Set the box-sizing model to border-box for all the elements in the document */
 html {
