@@ -1,3 +1,9 @@
+/*
+    Copyright (c) 2019 Rifa I. Achrinza
+    This document is licensed under MIT license (See LICENSE for details)
+    SPDX-Short-Identifier: MIT
+*/
+
 const jcCutoffPoints = {
     ACJC: 8,
     AJC: 11,

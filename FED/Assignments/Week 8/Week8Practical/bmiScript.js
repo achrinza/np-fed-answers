@@ -1,3 +1,9 @@
+/*
+    Copyright (c) 2019 Rifa I. Achrinza
+    This document is licensed under MIT license (See LICENSE for details)
+    SPDX-Short-Identifier: MIT
+*/
+
 const heightInput = document.querySelector('.block-bmi-calc__height-input');
 const weightInput = document.querySelector('.block-bmi-calc__weight-input');
 const resultOutput = document.querySelector('.block-bmi-calc__results');
