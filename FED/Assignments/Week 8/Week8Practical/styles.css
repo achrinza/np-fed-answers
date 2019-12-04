@@ -1,0 +1,22 @@
+.block-bmi-calc {
+    border: 10px solid #7F7F00;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.block-bmi-calc__results {
+    color: blue;
+}
+
+.block-jc-cutoffs {
+    border: 10px solid #7F7F00;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.block-jc-cutoffs__results {
+    margin: 15px 0;
+    padding: 15px;
+    background: yellow;
+    font-weight: bold;
+}
