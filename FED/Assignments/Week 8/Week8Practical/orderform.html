@@ -1,0 +1,118 @@
+<!--
+    Copyright (c) 2019 Rifa I. Achrinza
+    This document is licensed under MIT license (See LICENSE for details)
+    SPDX-Short-Identifier: MIT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Rifa Achrinza">
+    <meta name="description" content="Pizza order form">
+
+    <script async src="pizzaScript.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Pizza Order Form</title>
+
+    <style>
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            border: 10px solid olive;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-left: 20px;
+            padding: 1rem;
+        }
+
+        fieldset {
+            border-radius: 12px;
+        }
+
+        /*label*/ .deliver-postalcode {
+            margin-left: 10rem;
+        }
+
+        /*label*/ .label--flexible-size {
+            width: auto; /* Fix sizing error */
+        }
+
+        .price-calc {
+            padding: 15px;
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Pizza Order Form</h1>
+        <label>
+            Pizza Type
+            <select>
+                <option>Aloha Chicken</option>
+                <option>Beef Pepperoni</option>
+                <option>Chicken Delight</option>
+                <option>Deluxe Cheese</option>
+            </select>
+        </label>
+
+        <label>
+            Quantity
+            <input type="number" min="1" max="4" value="1">
+        </label>
+
+        <fieldset>
+            <legend>Size:</legend>
+            <label><input name="size" type="radio" value="Small">Small</label>
+            <label><input name="size" type="radio" value="Medium">Medium</label>
+            <label><input name="size" type="radio" value="Large">Large</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Crust:</legend>
+            <label><input name="crust" type="radio">Thin</label>
+            <label><input name="crust" type="radio">Thick</label>
+            <label><input name="crust" type="radio">Deep Dish</label>
+        </fieldset>
+
+        <fieldset name="toppings">
+            <legend>Toppings:</legend>
+            <label class="label--flexible-size"><input type="checkbox">Mushrooms</label>
+            <label><input type="checkbox">Sausage</label>
+            <label><input type="checkbox">Olives</label>
+        </fieldset>
+
+        <label>
+            Addons:
+            <select name="addons" multiple>
+                <option>Buffalo Wings</option>
+                <option>Garlic Bread</option>
+            </select>
+        </label>
+
+        <p class="price-calc"></p>
+
+        <fieldset>
+            <legend>Deliver to:</legend>
+
+            <label>Name: <input name="deliver-name" type="text" autocomplete></label><br>
+            <label>Address: <textarea name="deliver-address" rows="2" cols="30"></textarea></label>
+            <label class="deliver-postalcode">Postal Code: <input name="deliver-postalcode" type="text" pattern="[0-9]{6}"></label><br>
+            <label>Phone #: <input name="deliver-phone" type="text" pattern="[689][0-9]{7}"></label><br>
+            <label>Email: <input name="deliver-email" type="email"></label><br>
+            <label>Date: <input name="deliver-date" type="date"></label><br>
+            <label>Time: <input name="deliver-time" type="time" value="10:00" min="10:00" max="22:00"></label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
