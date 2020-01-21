@@ -1,0 +1,15 @@
+﻿/*
+  Copyright (c) 2019 Rifa I. Achrinza
+  This document is licensed under MIT license (See LICENSE for details)
+  SPDX-Short-Identifier: MIT
+*/
+
+/* footer styles */
+footer {
+    color: #EADDC4;
+    text-align: center;
+    font-size: .8em;
+    padding: 1em;
+    font-family: verdana, sans-serif;
+    background-color: #783F27;
+}

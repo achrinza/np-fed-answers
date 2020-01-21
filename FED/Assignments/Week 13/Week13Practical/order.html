@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1">
+        
+        <!-- Reference to Bootstrap libraries -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    
+        <!-- CSS that supports Stint Ultra Expanded Google Fonts -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded"
+          rel="stylesheet"
+        />
+        <!-- Site specific Cascading Stylesheet -->
+        <link rel="stylesheet" href="css/bakery-styles.css" />
+        <!-- To Do: Reference to the JavaScript library for including a HTML page -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        <script async src="js/order.js"></script>
+
+        <title>Gallery</title>
+
+        <style>
+            main {
+                max-width: 980px;
+                margin: 0 auto;
+                border: 0;
+            }
+            
+            fieldset {
+                margin-bottom: 2em;
+                padding: 1em;
+                border: 5px solid #F4A460;
+                border-radius: 0;
+            }
+
+            main h1 {
+                background-color: #F4A460;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+
+            .pre-submit-feedback {
+                color: #F00;
+            }
+
+            .submit-feedback {
+                color: #F00;
+                font-family: sans-serif;
+                font-size: 1.2rem;
+                font-weight: 800;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Create a full width Bootstrap container-->
+        <div class="container-fluid">
+            <!-- Bootstrap Grid 1st row - Header -->
+            <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+            </div>
+
+            <!-- Bootstrap Grid 2nd row - Content Section -->
+            <div class="row">
+                <!-- Left column - Main content (67% width) -->
+                <div class="col-sm-12">
+                    <main>
+                        <form class="order-form">
+                            <fieldset>
+                                <h1>Order Form</h1>
+                                <label>
+                                    Item:
+                                    <select
+                                        name="item"
+                                        required>
+                                    </select>
+                                </label>
+
+                                <label>
+                                    Quantity:
+                                    <input
+                                        name="quantity"
+                                        type="number"
+                                        min="1"
+                                        max="5"
+                                        value="1"
+                                        required>
+                                </label>
+
+                                <label>
+                                    Name:
+                                    <input
+                                        name="name"
+                                        type="text"
+                                        required>
+                                </label>
+
+                                <label>
+                                    Collection Date:
+                                    <input
+                                        name="collection-date"
+                                        type="date"
+                                        required>
+                                </label>
+                                <p class="pre-submit-feedback"></p>
+                            </fieldset>
+
+                            <input type="submit">
+                            <input type="reset">
+
+                            <p class="submit-feedback"></p>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Grid 3rd row - Footer -->
+        <div class="row">
+          <!-- Bootstrap Grid column, full width -->
+          <div class="col-sm-12">
+            <!-- To Do: Include the footer section -->
+            <div w3-include-html="footer.html"></div>
+          </div>
+        </div>
+        <!-- End of Bootstrap container div -->
+      </div>
+  
+      <!-- To Do: Call the includeHTML() function when loading the page -->
+      <script>
+        w3.includeHTML();
+      </script>
+    </body>
+</html>
