@@ -1,3 +1,7 @@
+// Copyright (c) 2020 Rifa I. Achrinza
+// This document is licensed under MIT license (See LICENSE for details)
+// SPDX-Short-Identifier: MIT
+
 #include <iostream>
 
 void changeValue(int x, int* y)
